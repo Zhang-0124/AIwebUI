@@ -6,6 +6,23 @@
     padding-top: 2.5rem
 }
 
+.custom-upload-button {
+    background-color: #0074d9;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#selectedFile {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 样式文件上传按钮的外观 */
+input[type="file"] {
+    display: none;
+}
+
 .small-button {
     min-width: 0 !important;
     max-width: 171px;

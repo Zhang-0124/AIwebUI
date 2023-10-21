@@ -6,6 +6,18 @@ main_parent.style = "padding: 0; margin: 0";
 main_parent.parentNode.style = "gap: 0";
 main_parent.parentNode.parentNode.style = "padding: 0";
 
+document.getElementById('fileUpload').addEventListener('change', function() {
+    const fileInput = document.getElementById('fileUpload');
+    const selectedFile = fileInput.files[0];
+
+    if (selectedFile) {
+        // 执行你的操作，比如上传文件到服务器或者处理文件内容
+        console.log('Selected file:', selectedFile);
+    } else {
+        console.log('No file selected');
+    }
+});
+
 document.querySelector(".header_bar").addEventListener("click", function(event) {
   if (event.target.tagName === "BUTTON") {
     const buttonText = event.target.textContent.trim();
